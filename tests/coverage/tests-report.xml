@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="9" assertions="9" failures="0" errors="1" time="0.738791">
+    <testsuite name="Feature" tests="8" assertions="8" failures="0" errors="1" time="0.696768">
+      <testsuite name="Tests\Feature\CreatePostTest" file="/var/www/html/laravel-blog/tests/Feature/CreatePostTest.php" tests="7" assertions="7" failures="0" errors="1" time="0.635163">
+        <testcase name="testReadAllThePosts" class="Tests\Feature\CreatePostTest" file="/var/www/html/laravel-blog/tests/Feature/CreatePostTest.php" line="24" assertions="1" time="0.159883"/>
+        <testcase name="testReadSinglePost" class="Tests\Feature\CreatePostTest" file="/var/www/html/laravel-blog/tests/Feature/CreatePostTest.php" line="36" assertions="2" time="0.094078"/>
+        <testcase name="testeditSinglePost" class="Tests\Feature\CreatePostTest" file="/var/www/html/laravel-blog/tests/Feature/CreatePostTest.php" line="47" assertions="0" time="0.096578">
+          <error type="UnexpectedValueException">Tests\Feature\CreatePostTest::testeditSinglePost
+UnexpectedValueException: The stream or file "/var/www/html/laravel-blog/storage/logs/laravel.log" could not be opened in append mode: failed to open stream: Permission denied
+
+/var/www/html/laravel-blog/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:110
+/var/www/html/laravel-blog/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+/var/www/html/laravel-blog/vendor/monolog/monolog/src/Monolog/Logger.php:344
+/var/www/html/laravel-blog/vendor/monolog/monolog/src/Monolog/Logger.php:712
+/var/www/html/laravel-blog/vendor/laravel/framework/src/Illuminate/Log/Writer.php:203
+/var/www/html/laravel-blog/vendor/laravel/framework/src/Illuminate/Log/Writer.php:114
+/var/www/html/laravel-blog/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php:71
+/var/www/html/laravel-blog/app/Exceptions/Handler.php:35
+/var/www/html/laravel-blog/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:314
+/var/www/html/laravel-blog/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:118
+/var/www/html/laravel-blog/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php:235
+/var/www/html/laravel-blog/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php:57
+/var/www/html/laravel-blog/tests/Feature/CreatePostTest.php:52
+</error>
+        </testcase>
+        <testcase name="testCreatePost" class="Tests\Feature\CreatePostTest" file="/var/www/html/laravel-blog/tests/Feature/CreatePostTest.php" line="57" assertions="1" time="0.065423"/>
+        <testcase name="testStorePost" class="Tests\Feature\CreatePostTest" file="/var/www/html/laravel-blog/tests/Feature/CreatePostTest.php" line="64" assertions="1" time="0.095436"/>
+        <testcase name="testUpdatePost" class="Tests\Feature\CreatePostTest" file="/var/www/html/laravel-blog/tests/Feature/CreatePostTest.php" line="76" assertions="1" time="0.058221"/>
+        <testcase name="testDeletePost" class="Tests\Feature\CreatePostTest" file="/var/www/html/laravel-blog/tests/Feature/CreatePostTest.php" line="90" assertions="1" time="0.065544"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\ExampleTest" file="/var/www/html/laravel-blog/tests/Feature/ExampleTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.061605">
+        <testcase name="testBasicTest" class="Tests\Feature\ExampleTest" file="/var/www/html/laravel-blog/tests/Feature/ExampleTest.php" line="17" assertions="1" time="0.061605"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Unit" tests="1" assertions="1" failures="0" errors="0" time="0.042023">
+      <testsuite name="Tests\Unit\ExampleTest" file="/var/www/html/laravel-blog/tests/Unit/ExampleTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.042023">
+        <testcase name="testBasicTest" class="Tests\Unit\ExampleTest" file="/var/www/html/laravel-blog/tests/Unit/ExampleTest.php" line="16" assertions="1" time="0.042023"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

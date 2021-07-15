@@ -1,0 +1,588 @@
+<?php
+$coverage = new SebastianBergmann\CodeCoverage\CodeCoverage;
+$coverage->setData(array (
+  '/var/www/html/laravel-blog/app/Http/Controllers/Auth/ResetPasswordController.php' => 
+  array (
+    37 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+  ),
+  '/var/www/html/laravel-blog/app/Http/Controllers/Auth/RegisterController.php' => 
+  array (
+    39 => 
+    array (
+    ),
+    40 => 
+    array (
+    ),
+    50 => 
+    array (
+    ),
+    51 => 
+    array (
+    ),
+    52 => 
+    array (
+    ),
+    53 => 
+    array (
+    ),
+    54 => 
+    array (
+    ),
+    55 => NULL,
+    65 => 
+    array (
+    ),
+    66 => 
+    array (
+    ),
+    67 => 
+    array (
+    ),
+    68 => 
+    array (
+    ),
+    69 => 
+    array (
+    ),
+    70 => NULL,
+  ),
+  '/var/www/html/laravel-blog/app/Http/Middleware/EncryptCookies.php' => 
+  array (
+  ),
+  '/var/www/html/laravel-blog/app/Console/Kernel.php' => 
+  array (
+    29 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    38 => 
+    array (
+    ),
+    39 => 
+    array (
+    ),
+  ),
+  '/var/www/html/laravel-blog/app/Providers/AppServiceProvider.php' => 
+  array (
+    17 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    27 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+  ),
+  '/var/www/html/laravel-blog/app/Http/Controllers/Auth/LoginController.php' => 
+  array (
+    37 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+  ),
+  '/var/www/html/laravel-blog/app/Providers/EventServiceProvider.php' => 
+  array (
+    28 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    31 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+  ),
+  '/var/www/html/laravel-blog/app/Http/Kernel.php' => 
+  array (
+  ),
+  '/var/www/html/laravel-blog/app/Http/Controllers/Controller.php' => 
+  array (
+  ),
+  '/var/www/html/laravel-blog/app/Providers/AuthServiceProvider.php' => 
+  array (
+    26 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    29 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    25 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+    ),
+  ),
+  '/var/www/html/laravel-blog/app/Http/Middleware/RedirectIfAuthenticated.php' => 
+  array (
+    20 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    22 => NULL,
+    24 => 
+    array (
+    ),
+    25 => NULL,
+  ),
+  '/var/www/html/laravel-blog/app/Http/Controllers/Auth/ForgotPasswordController.php' => 
+  array (
+    30 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+  ),
+  '/var/www/html/laravel-blog/app/Exceptions/Handler.php' => 
+  array (
+    35 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+    ),
+    36 => 
+    array (
+    ),
+    47 => 
+    array (
+    ),
+    48 => NULL,
+    59 => 
+    array (
+    ),
+    60 => 
+    array (
+    ),
+    61 => NULL,
+    63 => 
+    array (
+    ),
+    64 => NULL,
+  ),
+  '/var/www/html/laravel-blog/app/Http/Controllers/PostController.php' => 
+  array (
+    18 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+    ),
+    20 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+    ),
+    21 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+    ),
+    22 => NULL,
+    31 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+    ),
+    32 => NULL,
+    42 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+    ),
+    43 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+    ),
+    45 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+    ),
+    46 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+    ),
+    47 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+    ),
+    49 => NULL,
+    59 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+    ),
+    60 => NULL,
+    70 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+    ),
+    71 => NULL,
+    82 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+    ),
+    83 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+    ),
+    85 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+    ),
+    88 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+    ),
+    90 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+    ),
+    91 => NULL,
+    101 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+    ),
+    104 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+    ),
+    105 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+    ),
+    106 => NULL,
+  ),
+  '/var/www/html/laravel-blog/app/User.php' => 
+  array (
+  ),
+  '/var/www/html/laravel-blog/app/Http/Middleware/TrimStrings.php' => 
+  array (
+  ),
+  '/var/www/html/laravel-blog/app/Providers/BroadcastServiceProvider.php' => 
+  array (
+    17 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+  ),
+  '/var/www/html/laravel-blog/app/Http/Middleware/VerifyCsrfToken.php' => 
+  array (
+  ),
+  '/var/www/html/laravel-blog/app/Post.php' => 
+  array (
+  ),
+  '/var/www/html/laravel-blog/app/Providers/RouteServiceProvider.php' => 
+  array (
+    28 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    29 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    38 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    40 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    43 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    54 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    55 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    56 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    57 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    68 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    69 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    70 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    71 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+    72 => 
+    array (
+      0 => 'Tests\\Feature\\CreatePostTest::testReadAllThePosts',
+      1 => 'Tests\\Feature\\CreatePostTest::testReadSinglePost',
+      2 => 'Tests\\Feature\\CreatePostTest::testeditSinglePost',
+      3 => 'Tests\\Feature\\CreatePostTest::testCreatePost',
+      4 => 'Tests\\Feature\\CreatePostTest::testStorePost',
+      5 => 'Tests\\Feature\\CreatePostTest::testUpdatePost',
+      6 => 'Tests\\Feature\\CreatePostTest::testDeletePost',
+      7 => 'Tests\\Feature\\ExampleTest::testBasicTest',
+      8 => 'Tests\\Unit\\ExampleTest::testBasicTest',
+    ),
+  ),
+));
+$coverage->setTests(array (
+  'UNCOVERED_FILES_FROM_WHITELIST' => 
+  array (
+    'size' => 'unknown',
+    'status' => NULL,
+  ),
+  'Tests\\Feature\\CreatePostTest::testReadAllThePosts' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Tests\\Feature\\CreatePostTest::testReadSinglePost' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Tests\\Feature\\CreatePostTest::testeditSinglePost' => 
+  array (
+    'size' => 'unknown',
+    'status' => 4,
+  ),
+  'Tests\\Feature\\CreatePostTest::testCreatePost' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Tests\\Feature\\CreatePostTest::testStorePost' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Tests\\Feature\\CreatePostTest::testUpdatePost' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Tests\\Feature\\CreatePostTest::testDeletePost' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Tests\\Feature\\ExampleTest::testBasicTest' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Tests\\Unit\\ExampleTest::testBasicTest' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+));
+
+$filter = $coverage->filter();
+$filter->setWhitelistedFiles(array (
+  '/var/www/html/laravel-blog/app/Console/Kernel.php' => true,
+  '/var/www/html/laravel-blog/app/Exceptions/Handler.php' => true,
+  '/var/www/html/laravel-blog/app/Http/Controllers/Auth/ForgotPasswordController.php' => true,
+  '/var/www/html/laravel-blog/app/Http/Controllers/Auth/LoginController.php' => true,
+  '/var/www/html/laravel-blog/app/Http/Controllers/Auth/RegisterController.php' => true,
+  '/var/www/html/laravel-blog/app/Http/Controllers/Auth/ResetPasswordController.php' => true,
+  '/var/www/html/laravel-blog/app/Http/Controllers/Controller.php' => true,
+  '/var/www/html/laravel-blog/app/Http/Controllers/PostController.php' => true,
+  '/var/www/html/laravel-blog/app/Http/Kernel.php' => true,
+  '/var/www/html/laravel-blog/app/Http/Middleware/EncryptCookies.php' => true,
+  '/var/www/html/laravel-blog/app/Http/Middleware/RedirectIfAuthenticated.php' => true,
+  '/var/www/html/laravel-blog/app/Http/Middleware/TrimStrings.php' => true,
+  '/var/www/html/laravel-blog/app/Http/Middleware/VerifyCsrfToken.php' => true,
+  '/var/www/html/laravel-blog/app/Post.php' => true,
+  '/var/www/html/laravel-blog/app/Providers/AppServiceProvider.php' => true,
+  '/var/www/html/laravel-blog/app/Providers/AuthServiceProvider.php' => true,
+  '/var/www/html/laravel-blog/app/Providers/BroadcastServiceProvider.php' => true,
+  '/var/www/html/laravel-blog/app/Providers/EventServiceProvider.php' => true,
+  '/var/www/html/laravel-blog/app/Providers/RouteServiceProvider.php' => true,
+  '/var/www/html/laravel-blog/app/User.php' => true,
+));
+
+return $coverage;
