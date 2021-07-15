@@ -39,7 +39,12 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-      
+        $this->validate($request,[
+            'name' => 'required',
+            'detail' => 'required'
+        ]);
+       $post= Post::create($request->all());
+       return redirect('/posts/'.$post->id);
     
     }
 
