@@ -79,7 +79,15 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-       
+        $this->validate($request,[
+            'name' => 'required',
+            'detail' => 'required'
+        ]);
+
+
+        $post->update($request->all());
+
+        return redirect('/posts/'.$post->id);
     }
 
     /**
