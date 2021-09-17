@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>CRUD Post</h2>
+                <h2>CRUD POST</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-success" href="{{ route('posts.create') }}"> Create New Post</a>
@@ -28,9 +28,13 @@
             <th>Details</th>
             <th width="280px">Action</th>
         </tr>
+        @php
+        $i = 1
+        @endphp
         @foreach ($posts as $post)
+
         <tr>
-            <td>{{ ++$i }}</td>
+            <td>{{ $i++ }}</td>
             <td>{{ $post->name }}</td>
             <td>{{ $post->detail }}</td>
             <td>

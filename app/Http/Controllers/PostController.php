@@ -2,29 +2,36 @@
 
 namespace App\Http\Controllers;
 
-use App\Post;
+use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 
 class PostController extends Controller
 {
+    const PAGINATION=5;
+    const SUCCESS_MESSAGE = 'Post Added Successfully';
+    const UPDATE_MESSAGE  = 'Post Updated Successfully';
+    const DELETE_MESSAGE  = 'Post Deleted Successfully';
+    const STATUS          = 'success';
+
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * Function to display the index post page with pagination
+     * @author Akshatha
+     * @param null
+     * @return void
      */
     public function index()
     {
-        $posts = Post::latest()->paginate(5);
-
-        return view('posts.index',compact('posts'))
-        ->with('i', (request()->input('page', 1) - 1) * 5);
+        $posts = Post::latest()->paginate(self::PAGINATION);
+        return view('posts.index', compact('posts'));
+            
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
+     * Function to create a post
+     * @author Akshatha
+     * @param null
+     * @return void
      */
     public function create()
     {
@@ -32,76 +39,62 @@ class PostController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * Function to store the information into Post 
+     * @author Akshatha
+     * @param Request $request
+     * @return void
      */
     public function store(Request $request)
     {
-        $this->validate($request,[
-            'name' => 'required',
-            'detail' => 'required'
-        ]);
-       $post= Post::create($request->all());
-       return redirect('/posts/'.$post->id);
-    
+        $post = Post::create($request->all());
+        return redirect('/posts/' . $post->id)->with(self::STATUS, self::SUCCESS_MESSAGE);
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Post  $post
-     * @return \Illuminate\Http\Response
+     * Function to display the result
+     * @author Akshatha
+     * @param Post $post
+     * @return void
      */
     public function show(Post $post)
     {
-        return view('posts.show',compact('post'));
+        return view('posts.show', compact('post'));
     }
 
     /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Post  $post
-     * @return \Illuminate\Http\Response
+     * Function to Edit the Post
+     * @author Akshatha
+     * @param Post $post
+     * @return void
      */
     public function edit(Post $post)
     {
-        return view('posts.edit',compact('post'));
+        return view('posts.edit', compact('post'));
     }
 
     /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Post  $post
-     * @return \Illuminate\Http\Response
+     * Function to Update the Post
+     * @author Akshatha
+     * @param Request $request
+     * @param Post $post
+     * @return void
      */
     public function update(Request $request, Post $post)
     {
-        $this->validate($request,[
-            'name' => 'required',
-            'detail' => 'required'
-        ]);
-
-
         $post->update($request->all());
-
-        return redirect('/posts/'.$post->id);
+        return redirect('/posts/' . $post->id)->with(self::STATUS, self::UPDATE_MESSAGE);
     }
 
     /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Post  $post
-     * @return \Illuminate\Http\Response
+     * Function to delete the Post
+     * @author Akshatha
+     * @param Post $post
+     * @return void
      */
     public function destroy(Post $post)
     {
         $post->delete();
-
-
         return redirect()->route('posts.index')
-                        ->with('success','Post deleted successfully');
+            ->with(self::STATUS, self::DELETE_MESSAGE);
     }
 }
