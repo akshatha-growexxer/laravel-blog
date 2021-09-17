@@ -2,36 +2,29 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post;
+use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 
 class PostController extends Controller
 {
-    const PAGINATION=5;
-    const SUCCESS_MESSAGE = 'Post Added Successfully';
-    const UPDATE_MESSAGE  = 'Post Updated Successfully';
-    const DELETE_MESSAGE  = 'Post Deleted Successfully';
-    const STATUS          = 'success';
-
     /**
-     * Function to display the index post page with pagination
-     * @author Akshatha
-     * @param null
-     * @return void
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $posts = Post::latest()->paginate(self::PAGINATION);
-        return view('posts.index', compact('posts'));
-            
+        $posts = Post::latest()->paginate(5);
+
+        return view('posts.index',compact('posts'))
+        ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**
-     * Function to create a post
-     * @author Akshatha
-     * @param null
-     * @return void
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
      */
     public function create()
     {
@@ -39,62 +32,68 @@ class PostController extends Controller
     }
 
     /**
-     * Function to store the information into Post 
-     * @author Akshatha
-     * @param Request $request
-     * @return void
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        $post = Post::create($request->all());
-        return redirect('/posts/' . $post->id)->with(self::STATUS, self::SUCCESS_MESSAGE);
+       
+       $post= Post::create($request->all());
+       return redirect('/posts/'.$post->id);
+    
     }
 
     /**
-     * Function to display the result
-     * @author Akshatha
-     * @param Post $post
-     * @return void
+     * Display the specified resource.
+     *
+     * @param  \App\Post  $post
+     * @return \Illuminate\Http\Response
      */
     public function show(Post $post)
     {
-        return view('posts.show', compact('post'));
+        return view('posts.show',compact('post'));
     }
 
     /**
-     * Function to Edit the Post
-     * @author Akshatha
-     * @param Post $post
-     * @return void
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Post  $post
+     * @return \Illuminate\Http\Response
      */
     public function edit(Post $post)
     {
-        return view('posts.edit', compact('post'));
+        return view('posts.edit',compact('post'));
     }
 
     /**
-     * Function to Update the Post
-     * @author Akshatha
-     * @param Request $request
-     * @param Post $post
-     * @return void
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Post  $post
+     * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Post $post)
     {
+       
         $post->update($request->all());
-        return redirect('/posts/' . $post->id)->with(self::STATUS, self::UPDATE_MESSAGE);
+
+        return redirect('/posts/'.$post->id);
     }
 
     /**
-     * Function to delete the Post
-     * @author Akshatha
-     * @param Post $post
-     * @return void
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Post  $post
+     * @return \Illuminate\Http\Response
      */
     public function destroy(Post $post)
     {
         $post->delete();
+
+
         return redirect()->route('posts.index')
-            ->with(self::STATUS, self::DELETE_MESSAGE);
+                        ->with('success','Post deleted successfully');
     }
 }
